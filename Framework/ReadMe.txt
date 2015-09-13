@@ -1,0 +1,1 @@
+http://www.pluralsight.com/courses/building-spa-framework-angularjs
