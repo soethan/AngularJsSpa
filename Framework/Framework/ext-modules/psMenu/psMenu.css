@@ -35,7 +35,7 @@
 .ps-menu li div {
     display:inline-block;
     width:90%;
-    padding-left:16px;    
+    padding-left:16px;
 }
 .ps-selectable-item:hover {
     background-color:#555;
@@ -81,8 +81,8 @@
     display:inline-block;
     width:165px !important;
     margin-left:20px;
-    margin-top:5px;
-    line-height:1.5em !important;
+    margin-top:-2px;
+    line-height:3em !important;
 }
 .ps-popup-menu{
     position: absolute;

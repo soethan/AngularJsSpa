@@ -33,6 +33,9 @@ angular.module("psFramework").controller("psFrameworkController",
             var checkWidth = function () {
                 var width = Math.max($($window).width(), $window.innerWidth);
                 $scope.isMenuVisible = (width >= 768);
+                if ($scope.isMenuVisible) {
+                    $scope.isMenuVertical = true;
+                }
                 $scope.isMenuButtonVisible = !$scope.isMenuVisible;
             };
 
