@@ -23,6 +23,5 @@
     </div>
 </div>
 <div ng-transclude></div>
-<div style="position:absolute;left:220px;top:200px;color:red;font-size:44px;">
-    {{routeString}}
+<div ng-view class="ps-view" ng-class="{'ps-view-full-width': !isMenuVertical || !isMenuVisible}">
 </div>

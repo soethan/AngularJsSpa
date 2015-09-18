@@ -3,14 +3,15 @@
 //$scope.$apply() takes a function or an Angular expression string, and executes it, then calls $scope.$digest() to update any bindings or watchers.
 
 angular.module("psFramework").controller("psFrameworkController",
-    ["$rootScope", "$scope", "$window", "$timeout",
-        function ($rootScope, $scope, $window, $timeout) {
+    ["$rootScope", "$scope", "$window", "$timeout", "$location",
+        function ($rootScope, $scope, $window, $timeout, $location) {
             $scope.isMenuVisible = true;
             $scope.isMenuButtonVisible = true;
             $scope.isMenuVertical = true;
 
             $scope.$on("ps-menu-item-selected-event", function (evt, data) {
                 $scope.routeString = data.route;
+                $location.path(data.route);
                 checkWidth();
                 broadcastMenuState();
             });
@@ -33,10 +34,10 @@ angular.module("psFramework").controller("psFrameworkController",
             var checkWidth = function () {
                 var width = Math.max($($window).width(), $window.innerWidth);
                 $scope.isMenuVisible = (width >= 768);
-                if ($scope.isMenuVisible) {
+                $scope.isMenuButtonVisible = !$scope.isMenuVisible;
+                if ($scope.isMenuButtonVisible) {
                     $scope.isMenuVertical = true;
                 }
-                $scope.isMenuButtonVisible = !$scope.isMenuVisible;
             };
 
             $scope.menuButtonClicked = function () {
