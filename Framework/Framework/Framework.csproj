@@ -62,6 +62,9 @@
     <Content Include="app\directives\wwaGuidesDirective.js" />
     <Content Include="app\directives\wwaLocationsDirective.js" />
     <Content Include="Content\angular-gridster.min.css" />
+    <Content Include="ext-modules\psDashboard\psDashboard.css" />
+    <Content Include="ext-modules\psDashboard\psDashboardDirective.js" />
+    <Content Include="ext-modules\psDashboard\psDashboardTemplate.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-gridster.min.js" />
