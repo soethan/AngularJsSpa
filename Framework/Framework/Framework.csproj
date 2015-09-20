@@ -62,6 +62,9 @@
     <Content Include="app\directives\wwaGuidesDirective.js" />
     <Content Include="app\directives\wwaLocationsDirective.js" />
     <Content Include="app\services\dataService.js" />
+    <Content Include="app\widgets\wwaTemperature\wwaTemperature.css" />
+    <Content Include="app\widgets\wwaTemperature\wwaTemperatureDirective.js" />
+    <Content Include="app\widgets\wwaTemperature\wwaTemperatureTemplate.html" />
     <Content Include="Content\angular-gridster.min.css" />
     <Content Include="ext-modules\psDashboard\psDashboard.css" />
     <Content Include="ext-modules\psDashboard\psDashboardDirective.js" />
@@ -137,7 +140,10 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="app\widgets\wwaEmployee\" />
+    <Folder Include="app\widgets\wwaInventory\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
