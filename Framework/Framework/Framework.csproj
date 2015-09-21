@@ -69,6 +69,7 @@
     <Content Include="app\widgets\wwaTemperature\wwaTemperatureTemplate.html" />
     <Content Include="Content\angular-gridster.min.css" />
     <Content Include="Content\images\river1.png" />
+    <Content Include="Content\images\river2.png" />
     <Content Include="Content\images\therm-icon.png" />
     <Content Include="Content\ui-bootstrap-csp.css" />
     <Content Include="ext-modules\psDashboard\psDashboard.css" />
