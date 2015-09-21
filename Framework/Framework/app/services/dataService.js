@@ -122,7 +122,7 @@ angular.module("app").factory("dataService", ["$timeout", function ($timeout) {
                 }
             }
             return undefined;
-        }, 500);
+        }, 2000);
     };
 
     var getEmployees = function () {

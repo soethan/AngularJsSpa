@@ -3,10 +3,12 @@ angular.module("app").directive("wwaTemperature", ["dataService", function (data
     return {
         templateUrl: "app/widgets/wwaTemperature/wwaTemperatureTemplate.html",
         link: function (scope, el, attrs) {
+            scope.isLoaded = false;
             scope.selectedLocation = null;
 
             dataService.getLocation(scope.item.widgetSettings.id).then(function (data) {
                 scope.selectedLocation = data;
+                scope.isLoaded = true;
             });
         }
     };

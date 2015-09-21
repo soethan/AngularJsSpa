@@ -28,6 +28,11 @@
     overflow: hidden;
     min-height: 180px;
 }
+.wwa-temperature-body .fa-spin{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
 .wwa-temperature-view{
     background-color: rgba(255,255,255,.7);
     position: absolute;
