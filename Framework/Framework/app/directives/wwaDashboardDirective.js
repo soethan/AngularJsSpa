@@ -17,6 +17,22 @@ angular.module("app").directive("wwaDashboard", [function () {
                 swapping: false
             };
 
+            scope.widgetDefinitions = [
+                {
+                    title: "Temperature",
+                    settings: {
+                        sizeX: 3,
+                        sizeY: 3,
+                        minSizeX: 2,
+                        minSizeY: 2,
+                        template: "<wwa-temperature></wwa-temperature>",
+                        widgetSettings: {
+                            id: 1000
+                        }
+                    }
+                }
+            ];
+
             scope.widgets = [
                 {
                     title: "First",
