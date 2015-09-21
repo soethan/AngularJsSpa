@@ -20,6 +20,12 @@ angular.module("psDashboard").directive("psWidgetBody",
                 };
                 $modal.open(options);
             };
+
+            scope.iconClicked = function () {
+                //empty body.
+                //this function is used by ng-click in the template
+                //so that icon clicks aren't intercepted by widgets
+            };
         }
     };
 }]);
