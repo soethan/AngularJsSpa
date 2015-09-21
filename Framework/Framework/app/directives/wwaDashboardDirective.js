@@ -27,24 +27,26 @@ angular.module("app").directive("wwaDashboard", [function () {
                         minSizeY: 2,
                         template: "<wwa-temperature></wwa-temperature>",
                         widgetSettings: {
-                            id: 1000
+                            id: 1000,
+                            templateUrl: "app/dialogs/wwaSelectLocationTemplate.html",
+                            controller: "wwaSelectLocationController"
                         }
                     }
                 }
             ];
 
             scope.widgets = [
-                {
-                    title: "First",
-                    sizeX: 3,
-                    sizeY: 3,
-                    row: 0,
-                    col: 0,
-                    template: "<wwa-temperature></wwa-temperature>",
-                    widgetSettings: {
-                        id: 1000
-                    }
-                }//,
+                //{
+                //    title: "First",
+                //    sizeX: 3,
+                //    sizeY: 3,
+                //    row: 0,
+                //    col: 0,
+                //    template: "<wwa-temperature></wwa-temperature>",
+                //    widgetSettings: {
+                //        id: 1000
+                //    }
+                //},
                 //{
                 //    title: "Second",
                 //    sizeX: 2,
