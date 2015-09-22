@@ -69,6 +69,7 @@
     <Content Include="app\widgets\wwaTemperature\wwaTemperatureDirective.js" />
     <Content Include="app\widgets\wwaTemperature\wwaTemperatureTemplate.html" />
     <Content Include="Content\angular-gridster.min.css" />
+    <Content Include="Content\images\employee-don.png" />
     <Content Include="Content\images\river1.png" />
     <Content Include="Content\images\river2.png" />
     <Content Include="Content\images\therm-icon.png" />
@@ -78,6 +79,10 @@
     <Content Include="ext-modules\psDashboard\psDashboardTemplate.html" />
     <Content Include="ext-modules\psDashboard\psWidgetBodyDirective.js" />
     <Content Include="ext-modules\psDashboard\psWidgetBodyTemplate.html" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileDirective.js" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileSmallDirective.js" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileSmallTemplate.html" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileTemplate.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-gridster.min.js" />
