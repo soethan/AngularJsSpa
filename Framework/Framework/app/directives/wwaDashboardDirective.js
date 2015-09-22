@@ -1,5 +1,5 @@
 ﻿"use strict";
-angular.module("app").directive("wwaDashboard", [function () {
+angular.module("app").directive("wwaDashboard", ["$localStorage", function ($localStorage) {
     return {
         scope: {
 
@@ -35,7 +35,7 @@ angular.module("app").directive("wwaDashboard", [function () {
                 }
             ];
 
-            scope.widgets = [
+            scope.widgets = $localStorage.widgets || [
                 //{
                 //    title: "First",
                 //    sizeX: 3,
@@ -55,6 +55,10 @@ angular.module("app").directive("wwaDashboard", [function () {
                 //    col: 5
                 //}
             ];
+
+            scope.$watch("widgets", function () {
+                $localStorage.widgets = scope.widgets;//$localStorage is from ngStorage
+            }, true);//this flag will watch deeply till the objects in the array 
         }
     };
 }]);

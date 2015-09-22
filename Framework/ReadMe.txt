@@ -10,3 +10,6 @@ https://github.com/ManifestWebDesign/angular-gridster
 https://rawgit.com/ManifestWebDesign/angular-gridster/master/index.html#/dashboard
 
 http://angular-ui.github.io/bootstrap/#/modal
+
+*** ngStorage ***
+https://github.com/gsklee/ngStorage
