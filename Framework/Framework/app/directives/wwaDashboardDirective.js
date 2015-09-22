@@ -10,7 +10,7 @@ angular.module("app").directive("wwaDashboard", [function () {
 
             scope.gridsterOpts = {
                 columns: 12,
-                margins: [20, 20],
+                margins: [40, 20],
                 outerMargin: false,
                 pushing: true,
                 floating: true,
