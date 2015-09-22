@@ -115,6 +115,17 @@ angular.module("app").factory("dataService", ["$timeout", function ($timeout) {
     };
 
     var getLocation = function (id) {
+        //var timeout = $timeout(function () {
+        //    $timeout.cancel(timeout);
+        //    return undefined;
+        //    for (var i = 0; i < locations.length; i++) {
+        //        if (locations[i].id == id) {
+        //            return locations[i];
+        //        }
+        //    }
+        //    return undefined;
+        //}, 2000);
+        //return timeout;
         return $timeout(function () {
             for (var i = 0; i < locations.length; i++) {
                 if (locations[i].id == id) {
