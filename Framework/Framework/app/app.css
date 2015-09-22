@@ -1,7 +1,10 @@
 ﻿body {
-    background-color:#444;
+    background-color:#fff;
     font-family: "Open Sans", sans-serif;
 }
 .container-fluid {
     padding: 0;
+}
+.sign-in-form{
+    padding: 80px;
 }
